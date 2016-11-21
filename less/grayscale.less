@@ -114,7 +114,7 @@ a {
         background: -webkit-linear-gradient(red, yellow, green); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(red, yellow, green); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(transparent, black, transparent); /* Standard syntax (must be last) */
+        background: linear-gradient(transparent, rgba(10, 10, 10, .8), transparent); /* Standard syntax (must be last) */
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -139,15 +139,11 @@ a {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
     .intro-body {
         padding-top:100px;
+
         text-shadow: 0px 0px 20px black;
-
-
-        .heading {
-            font-size: 40px;
-
-        }
         .intro-text {
             font-size: 18px;
             background: rgba(40, 40, 40, .4);
@@ -160,10 +156,8 @@ a {
         height: 100vh;
         padding: 0;
         .intro-body {
-            .heading {
-                font-size: 100px;
-            }
             .intro-text {
+              vertical-align: middle;
                 font-size: 20px;
                 border-width: 0px 30 0 0;
             }
