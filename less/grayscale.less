@@ -20,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0 0 35px;
+    margin: 0 0 0;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -155,7 +155,6 @@ a {
     }
     @media(min-width:768px) {
         height: 100vh;
-        padding: 0;
         .intro-body {
             .intro-text {
               vertical-align: middle;
@@ -262,25 +261,37 @@ a {
     padding-top: 20px;
 }
 
+.header-section-about{
+  background: url(https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-9/546593_587859084002_1344209020_n.jpg?oh=3c8370ed30cc8c94b9195b94a3330e35&oe=58B6BE20) no-repeat center center scroll;
+}
+
+.header-section-project {
+  background: url(https://cdn.pixabay.com/photo/2015/10/27/14/40/programming-1009134_960_720.jpg) no-repeat center center scroll;
+}
+.header-section-contact {
+  background: url(http://media.istockphoto.com/photos/laptop-on-the-desk-picture-id482685052?s=2048x2048) no-repeat center center scroll;
+}
+
 .header-section {
     width: 100%;
     color: white;
     height:200px;
-    background: url(https://cdn.pixabay.com/photo/2015/10/27/14/40/programming-1009134_960_720.jpg) no-repeat center center scroll;
     background-color: black;
      background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    border-color:black;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    padding-top: 50px;
 }
-
-
-footer {
-    padding: 50px 0;
-    p {
-        margin: 0;
-    }
+.spacer-lg {
+  padding-top: 100px;
+}
+.spacer-md {
+  margin-top:30px;
 }
 
 ::-moz-selection {
