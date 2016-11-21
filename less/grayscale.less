@@ -49,6 +49,9 @@ a {
         color: darken(@primary,20%);
     }
 }
+.red {
+  color: #d9534f
+}
 
 .light {
     font-weight: 400;
@@ -126,28 +129,25 @@ a {
     }
 }
 
-
-
-
 .intro {
     height: auto;
-    padding-top: 100px;
+    padding-top: 90px;
     color: white;
     background-attachment: fixed;
     background: url(http://media.istockphoto.com/photos/laptop-on-the-desk-picture-id482685052?s=2048x2048) no-repeat bottom center scroll;
     background-color: white;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 
     .intro-body {
-        padding-top:100px;
-
-        text-shadow: 0px 0px 20px black;
+        vertical-align: middle;
+        text-shadow: 0px 0px 8px black;
         .intro-text {
             font-size: 18px;
-            background: rgba(40, 40, 40, .4);
+            background: rgba(40, 40, 40, .7);
             padding-left: 15px;
             padding: 15px;
             width: 380px;
@@ -155,14 +155,14 @@ a {
     }
     @media(min-width:768px) {
         height: 100vh;
-        .intro-body {
-            .intro-text {
-              vertical-align: middle;
-                font-size: 20px;
-                border-width: 0px 30 0 0;
-            }
-        }
     }
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+.z-index-5 {
+  z-index: 5;
 }
 .gradient-border-top {
     height:50px;
@@ -171,7 +171,7 @@ a {
     background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(transparent, rgba(40, 40, 40, .4)); /* Standard syntax */
+    background: linear-gradient(transparent, rgba(40, 40, 40, .7)); /* Standard syntax */
 }
 
 .gradient-border-bot {
@@ -181,7 +181,7 @@ a {
     background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(rgba(40, 40, 40, .4),transparent); /* Standard syntax */
+    background: linear-gradient(rgba(40, 40, 40, .7),transparent); /* Standard syntax */
 }
 
 .btn-circle {
@@ -273,11 +273,13 @@ a {
 }
 
 .header-section {
+  position: relative;;
     width: 100%;
-    color: white;
     height:200px;
+    color: white;
+    text-shadow: 0px 0px 8px black;
     background-color: black;
-     background-attachment: fixed;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

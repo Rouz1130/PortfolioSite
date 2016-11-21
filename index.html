@@ -2,102 +2,88 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>My Portfolio</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- Theme CSS -->
-    <link href="css/grayscale.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="I am .Net Core Web Developer in Seattle">
+  <meta name="author" content="Jonathan Buchner">
+  <title>Jonathan Buchner Portfolio</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <!-- Custome Style Sheet -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  Menu <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+                  <i class="fa fa-play-circle"></i> <span class="light">My Portfolio</span>
+              </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-main-collapse">
+              <ul class="nav navbar-nav black-background">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="#project">Projects</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#about">Career</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i> <span class="light">My Portfolio</span>
-                </a>
-            </div>
+  <!-- Intro Header -->
+  <header class="intro">
+      <div class="intro-body">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                      <div class="gradient-border-top"></div>
+                      <p class="intro-text">
+                        Welcome,
+                        <br><br>
+                        I am web developer from Seattle, Wa with experience using DotNet Core, Ember, Angular, and php.  See my recent 2016 work in the projects section.
+                        <br><br>
+                        Thank you for visiting,
+                        <br><br>
+                        Jonathan Buchner
+                        <br>
+                        <a href="#project" class="btn btn-circle page-scroll center-block">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                      </p>
+                      <div class="gradient-border-bot"> </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-main-collapse">
-                <ul class="nav navbar-nav black-background">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Background</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#project">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="gradient-border-top"></div>
-                        <p class="intro-text">
-                          Welcome,
-                          <br><br>
-                          I am a .Net Core, Ember, Angular web developer living in Seattle, WA.  My contact information is below.
-                          <br><br>
-                          Thanks,
-                          <br><br>
-                          <i>Jonathan Buchner</i><br>
-                          <a href="#about" class="btn btn-circle page-scroll center-block">
-                              <i class="fa fa-angle-double-down animated"></i>
-                          </a>
-                        </p>
-                        <div class="gradient-border-bot"> </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Project Section -->
+  <!-- Project Section -->
     <section id="project" class="text-center">
-      <div class="header-section header-section-project content-section">
+      <div class="header-section header-section-project content-section z-index-10">
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
@@ -108,151 +94,140 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 spacer-md">
-            <h1><small>Capstone Project</small></h1>
+          <div class="col-lg-12 spacer-lg">
+            <h3 class="red">Fall 2016 Projects at Epicodus</h3>
           </div>
-          <div class="col-md-6 portfolio-item col-md-offset-3 ">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project Name</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
-      </div>
-    </div>
-    <!-- /.row -->
-    <section class="container content-section text-center">
-      <div class="row">
-        <div class="col-lg-12">
-          <h3><small>.Net Core, Ember, and Angular projects</small></h3>
-        </div>
-    </div>
-    <!-- Projects Row -->
-    <div class="row spacer-md">
-        <div class="col-md-4 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project Name</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project Name</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-        <div class="col-md-4 portfolio-item">
-            <a href="#">
-                <img class="img-responsive" src="http://placehold.it/700x400" alt="">
-            </a>
-            <h3>
-                <a href="#">Project Name</a>
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-        </div>
-      </div>
-    <!-- /.row -->
-    </section>
-    <div class="spacer-lg"></div>
-    <!-- About Section -->
-    <section id="about" class="text-center">
-      <div class="header-section header-section-about content-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1 class="page-header">Background</h1>
-            </div>
+      <!-- Projects Row -->
+      <div class="row spacer-md">
+          <div class="col-md-4 portfolio-item">
+              <h3><small>DotNet Core</small></h3>
+              <a href="#">
+                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+              </a>
+              <h3 class="spacer-md">
+              <a href="#">Capstone</a>
+              </h3>
+              <p>Epicodus week long final project exploring</p>
+          </div>
+          <div class="col-md-4 portfolio-item">
+            <h3><small>Ember</small></h3>
+              <a href="#">
+                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+              </a>
+              <h3 class="spacer-md">
+                  <a href="#">Behind the Veil</a>
+              </h3>
+              <p>calculates the binomial distribution of outcomes between two units from <i>the 9th age</i>, a community run tabletop game.  CRUD, connects to firebase, and impliments chart.js.  Project supports game design staff.</p>
+              <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-success spacer-md"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+          </div>
+          <h3><small>Angular</small></h3>
+          <div class="col-md-4 portfolio-item">
+              <a href="#">
+                  <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+              </a>
+              <h3 class="spacer-md">
+                  <a href="#">Calorie Counter</a>
+              </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
           </div>
         </div>
       </div>
+  <!-- /.row -->
+  </section>
+  <div class="spacer-lg"></div>
+  <div class="spacer-lg"></div>
+  <!-- About Section -->
+  <section id="about" class="text-center">
+    <div class="header-section header-section-about content-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <div class="spacer-lg"></div>
-            <h1><small>Web Development</small></h1>
-            <div class="spacer-md"></div>
-            <p> I discuss my classes here</p>
-            <div class="spacer-lg"></div>
-            <h1><small>Career</small></h1>
-            <div class="spacer-md"></div>
-            <p>
-              First paragraph career section
-            </p>
-            <p>
-              In 2011, I started a Make The Summit, an LLC online communtiy to encourage exploring Washington's Mts. I took the GMAT in 2015 and I have interest in continuing my education with an MBA.
-            </p>
-            <div class="spacer-lg">
+            <h1 class="page-header">Background</h1>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="spacer-lg"></div>
+          <h1><small>Web Development</small></h1>
+          <div class="spacer-md"></div>
+          <p> I discuss my classes here</p>
+          <div class="spacer-lg"></div>
+          <h1><small>Career</small></h1>
+          <div class="spacer-md"></div>
+          <p>
+            First paragraph career section
+          </p>
+          <p>
+            In 2011, I started a Make The Summit, an LLC online communtiy to encourage exploring Washington's Mts. I took the GMAT in 2015 and I have interest in continuing my education with an MBA.
+          </p>
+          <div class="spacer-lg">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <div class="spacer-lg"></div>
-    <section id="contact" class="content-section text-center">
-      <div class="header-section header-section-contact">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-              <h1>Contact Me</h1>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Contact Section -->
+  <div class="spacer-lg"></div>
+  <section id="contact" class="content-section text-center">
+    <div class="header-section header-section-contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
-            <div class="spacer-lg"></div>
-            <h1><small>Contact Information</small></h1>
-            <div class="spacer-lg"></div>
-            <p>Encourage to contact me</p>
-            <div class="spacer-lg"></div>
-            <ul class="list-inline banner-social-buttons">
-                <li>
-                    <a href="https://twitter.com/SBootstrap" class="btn btn-primary btn-lg"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> <span class="network-name">Email</span></a>
-                </li>
-                <li>
-                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-primary btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                </li>
-                <li>
-                    <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-primary btn-lg"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                </li>
-            </ul>
-            <div class="spacer-lg"></div>
-            <div class="spacer-lg"></div>
+            <h1>Contact Me</h1>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <div class="well">
-      <div class="container text-center">
-          <p>Copyright &copy; Jonathan Buchner 2016</p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="spacer-lg"></div>
+          <h1><small>Contact Information</small></h1>
+          <div class="spacer-lg"></div>
+          <p>Encourage to contact me</p>
+          <div class="spacer-lg"></div>
+          <ul class="list-inline banner-social-buttons">
+              <li>
+                  <a href="https://twitter.com/SBootstrap" class="btn btn-primary btn-lg spacer-md"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> <span class="network-name">Email</span></a>
+              </li>
+              <li>
+                  <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-primary btn-lg spacer-md"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+              </li>
+              <li>
+                  <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-primary btn-lg spacer-md"><i class="fa fa-linkedin-square fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+              </li>
+          </ul>
+          <div class="spacer-lg"></div>
+          <div class="spacer-lg"></div>
+        </div>
       </div>
     </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+  </section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Footer -->
+  <div class="well">
+    <div class="container text-center">
+        <p>Copyright &copy; Jonathan Buchner 2016</p>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/grayscale.min.js"></script>
 </body>
 
 </html>
