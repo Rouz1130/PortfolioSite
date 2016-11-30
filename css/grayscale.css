@@ -263,6 +263,9 @@ a:focus {
 .header-section-contact {
   background: url(../img/intoCompPucture.jpg) no-repeat center center scroll;
 }
+.header-section-about {
+  background: url(../img/chessbackground.jpg);
+}
 .header-section {
   position: relative;
   width: 100%;
@@ -278,10 +281,6 @@ a:focus {
   border-width: 1px 0 1px 0;
   border-style: solid;
   padding-top: 50px;
-}
-.header-section-about {
-  background-color: white;
-  color: black;
 }
 .spacer-lg {
   padding-top: 100px;
